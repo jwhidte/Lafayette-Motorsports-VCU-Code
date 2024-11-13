@@ -1,0 +1,47 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: Turbocharger OnBoardDataLogger OffBoardDiagnosticTool2 OffBoardDiagnosticTool1 FileServer ParkingBrakeController SeatControl2 FanDriveController SteeringColumnUnit CommunicationUnitRadio CommunicationUnitSatellite CommunicationUnitCellular PropulsionBatteryCharger ChassisController2 ChassisController1 EngineValveControl AuxiliaryHeater2 AuxiliaryHeater1 ClutchUnit RampControl InformationSystem1 SuspensionSystemController2 OilSensor VehicleDynamicStability ExhaustEmissionController TransmissionDisplay2 TransmissionDisplay1 ClimateControl2 WaterPumpController RearAxleSteeringController LightingOperatorControl SeatController1 IgnitionController2 IgnitionController1 TirePressureController CabController2 CabController1 PneumaticSystemController SuspensionSystemController1 HydraulicPumpController EnduranceBrakingSystem RetarderExhaustEngine2 OnBoardDiagnosticUnit HeadwayController RetarderExhaustEngine1 CabDisplay1 ManagementComputer VirtualTerminal OffVehicleGateway PowerTakeOffFront HitchControl AuxiliaryValveControl BodyController TractorTrailerBridge1 StarterSystem ElectricalSystem VehicleSecurity VehicleNavigation AerodynamicControl ElectricalChargingSystem ClimateControl1 TripRecorder InstrumentCluster SuspensionDriveAxle2 SuspensionDriveAxle1 SuspensionSteerAxle SteeringController FuelSystem CruiseControl RetarderDriveline RetarderEngine BrakesDriveAxle2 BrakesDriveAxle1 BrakesSystemController BrakesSteerAxle AxleDrive2 AxleDrive1 AxleSteering PowerTakeOff ShiftConsoleSecondary ShiftConsolePrimary Transmission2 Transmission1 Engine2 Engine1
+
+BO_ 2364540158 EEC1: 8 Vector__XXX
+ SG_ EngSpeed : 24|16@1+ (0.125,0) [0|8031.88] "rpm" Vector__XXX
+
+BO_ 2563833598 CL: 8 Vector__XXX
+ SG_ IlluminationBrightnessPercent : 0|8@1+ (0.4,0) [0|100] "%" Vector__XXX
+
+CM_ SG_ 2364540158 EngSpeed "Actual engine speed which is calculated over a minimum crankshaft angle of 720 degrees divided by the number of cylinders.";
+CM_ SG_ 2563833598 IlluminationBrightnessPercent "Commanded backlight brightness level for all cab displays";
+CM_ BO_ 2563833598 "Cab Illumination Message";
+CM_ BO_ 2364540158 "Electronic Engine Controller 1";
