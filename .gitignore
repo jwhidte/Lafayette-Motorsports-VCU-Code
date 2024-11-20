@@ -1,7 +1,5 @@
 # List of untracked files to ignore
 *.xml
-**/Accelerator_test_build_raptor_rtw
-**/Accelerator_raptor_rtw
-**/Training_raptor_rtw
-
-
+Accelerator_test_build_raptor_rtw/
+Accelerator_raptor_rtw/
+Training_raptor_rtw/
