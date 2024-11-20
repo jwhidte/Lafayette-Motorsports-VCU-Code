@@ -3,3 +3,6 @@
 Accelerator_test_build_raptor_rtw/
 Accelerator_raptor_rtw/
 Training_raptor_rtw/
+Accelerator_raptor_rtw/_buildgen/compile.mak
+Accelerator_raptor_rtw/_buildgen/compile.mak
+*.mak
