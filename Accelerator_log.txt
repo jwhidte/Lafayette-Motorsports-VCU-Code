@@ -8,10 +8,10 @@
 Warning: 'Output Port 2' of 'Accelerator/Foreground/raptor_can_rxmsg' is not connected.
 Warning: 'Output Port 3' of 'Accelerator/Foreground/raptor_can_rxmsg' is not connected.
 Warning: 'Output Port 4' of 'Accelerator/Foreground/raptor_can_rxmsg' is not connected.
-### Model update completed... (5.9 seconds) 
+### Model update completed... (8.8 seconds) 
 ### Building with Raptor_2022b_3.0.14889...
 ### Building with MATLAB 9.13.0.2698988 (R2022b) Update 10...
-### Current Time: Nov 20, 2024 17:11:23
+### Current Time: Apr 07, 2025 11:25:17
 ### Raptor IO Customization for Target: GCM-1793-196-1503...
 Processing with raptor_rlc... 
 Processing : raptor_gen_datastores.rlc... 
@@ -109,7 +109,7 @@ Processing : ECU-1793-196-1503_ertTemplate.rlc...
 
 ### Real-Time Workshop, entering code generation...
 ### Generating code and artifacts to 'Model specific' folder structure
-### Generating code into build folder: C:\Developement\Motorsports\VCU\Accelerator_raptor_rtw
+### Generating code into build folder: C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw
 Warning: 'Output Port 2' of 'Accelerator/Foreground/raptor_can_rxmsg' is not connected.
 Warning: 'Output Port 3' of 'Accelerator/Foreground/raptor_can_rxmsg' is not connected.
 Warning: 'Output Port 4' of 'Accelerator/Foreground/raptor_can_rxmsg' is not connected.
@@ -146,7 +146,7 @@ Warning: 'Output Port 4' of 'Accelerator/Foreground/raptor_can_rxmsg' is not con
 .
 ### Writing source file rtGetInf.c
 ### Writing source file Accelerator_data.c
-### TLC code generation complete (took 32.39s).
+### TLC code generation complete (took 18.565s).
 .
 ### Found Timed Triggers
 UpdateAbsTime, Interval : Second
@@ -163,14 +163,14 @@ can_process_rx_queue_CAN1, Interval : Foreground
 ### Real-Time Workshop, creating make file...
 .
 ### Processing Template Makefile: C:\Program Files (x86)\NewEagle\Raptor\2022b_3.0.14889\build\raptor.tmf
-### Created makefile C:\Developement\Motorsports\VCU\Accelerator_raptor_rtw\Accelerator.mk
+### Created makefile C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw\Accelerator.mk
 
 ### Real-Time Workshop, make file created...
 
 ### Real-Time Workshop, exiting...
 
 ### Building source files...
-### Beginning Build for Accelerator_022 ... 
+### Beginning Build for Accelerator_023 ... 
         1 file(s) copied. 
 #-------------------------------------------- 
 # Compiling... 
@@ -193,19 +193,92 @@ can_process_rx_queue_CAN1, Interval : Foreground
 # Compiling source file : time.c 
 # Compiling source file : xcp_app_xcp1.c 
 # Compiling source file : xcp_protocol.c 
-# Compiling source file : neweagle_files/xcp_app.c 
 #-------------------------------------------- 
 # Linking... 
 # Linking relocatable ELF file... 
-_buildgen/Objects/xcp_app_xcp1.o: In function `Timed_Trigger_XCP': 
-C:\Developement\Motorsports\VCU\Accelerator_raptor_rtw/xcp_app_xcp1.c:109: multiple definition of `Timed_Trigger_XCP' 
-_buildgen/Objects/xcp_app.o:C:\Developement\Motorsports\VCU\Accelerator_raptor_rtw/neweagle_files/xcp_app.c:109: first defined here 
-_buildgen/Objects/xcp_protocol.o: In function `XcpApp_CanTransmit': 
-C:\Developement\Motorsports\VCU\Accelerator_raptor_rtw/xcp_protocol.c:234: multiple definition of `XcpApp_CanTransmit' 
-_buildgen/Objects/xcp_app.o:C:\Developement\Motorsports\VCU\Accelerator_raptor_rtw/neweagle_files/xcp_app.c:78: first defined here 
-C:\HighTec\TriCore\bin\tricore-ld.exe: Warning: size of symbol `XcpApp_CanTransmit' changed from 58 to 10 in _buildgen/Objects/xcp_protocol.o 
-C:\Program Files (x86)\NewEagle\Raptor\2022b_3.0.14889\GCM-1793-196-1503\tools\make\bin\make.exe[1]: *** [relocatable.elf] Error 1 
-C:\Program Files (x86)\NewEagle\Raptor\2022b_3.0.14889\GCM-1793-196-1503\tools\make\bin\make.exe: *** [link] Error 2 
-The system cannot find the file specified. 
-C:\\HighTec\\TriCore\bin\tricore-nm.exe: Accelerator.elf: No such file or directory 
-The system cannot find the file specified. 
+# Linking absolute ELF file... 
+# Generating hex file... 
+ 
+# Merging hex files... 
+        1 file(s) copied. 
+        1 file(s) copied. 
+ 
+# Build Tool Chain Completed 
+        1 file(s) copied. 
+        1 file(s) copied. 
+Generating ASAP2 file... 
+A2L:  Build Dir: C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw 
+A2L: Model Name: Accelerator 
+A2L:    SwIDTxt: Accelerator_023 
+A2L:     Target: GCM-1793-196-1503 
+Address Mode: SYM 
+Preparing to generate ASAP2 file... 
+Creating ASAP2 file for access level RPG... 
+Creating ASAP2 file for access level 4... 
+Creating ASAP2 file for access level 1... 
+Created ASAP2 file : C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw\Accelerator_023_A1.a2l
+Created ASAP2 file : C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw\Accelerator_023_A4.a2l
+Created ASAP2 file : C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw\Accelerator_023_RPG.a2l
+settings = 
+  struct with fields:
+               Target: 'GCM-1793-196-1503'
+            genVISION: 0
+      ProgrammingBaud: '250k'
+    GlobalAccessLevel: 1
+             LiteMode: 0
+           ProjectDir: 'C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\ECU\RPG\Training\Accelerator'
+            ModelName: 'Accelerator'
+            StackSize: 2048
+             HeapSize: 4096
+               calLoc: 'NonVolatile (EEPROM)'
+              EcuAddr: 11
+             compiler: 'HighTec v3.4.5.11'
+        UDSServerAddr: 1536
+        UDSClientAddr: 1616
+         BuildDirPath: 'C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw'
+            RaptorDir: 'C:\Program Files (x86)\NewEagle\Raptor\2022b_3.0.14889'
+          AddBuildNum: 1
+          SetFileName: 0
+             BuildUID: 'JZ7jQ7siPkGax_OOunDKn'
+             BuildNum: 23
+        buildLocation: 'Raptor Default'
+              SwIdTxt: 'Accelerator_023'
+             CalIdTxt: 'Accelerator_023_000'
+         HardwareType: '2954298118'
+           IdTableRev: '3'
+       ProgramFileExt: 'hex'
+            DateStamp: '07-Apr-2025 11:26:21'
+         OutputHexA2L: 0
+          exeLocation: 'C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw'
+          a2lLocation: 'C:\Developement\Motorsports\Lafayette-Motorsports-VCU-Code\Accelerator_raptor_rtw'
+          rpgLocation: 'C:\ECU\rpg'
+        MatlabVersion: '9.13.0.2698988 (R2022b) Update 10'
+        RaptorVersion: '2022b_3.0.14889_7266'
+### Calculating Memory Usage
+Memory Usage Summary:
+ 
+   FLASH APP0                          :  478421  of 1966079 Bytes ( 24.3 %)
+   FLASH APP1                          :     232  of 1572863 Bytes (  0.0 %)
+   FLASH DATA                          :   15254  of  507903 Bytes (  3.0 %)
+   FIXEDEE                             :       0  of    2160 Bytes (  0.0 %)
+   EEPROM                              :     460  of   70800 Bytes (  0.6 %)
+   INTERNAL RAM1                       :    1605  of  131072 Bytes (  1.2 %)
+                 EEVariables_RAMShadow :     460             Bytes (  0.4 %)
+                          RAMVariables :     256             Bytes (  0.2 %)
+                      RAMEditVariables :     172             Bytes (  0.1 %)
+   INTERNAL RAM2                       :   68396  of  131072 Bytes ( 52.2 %)
+                         Accelerator_B :     100             Bytes (  0.1 %)
+                     Accelerator_DWork :    4036             Bytes (  3.1 %)
+ 
+NewEagle.RILPackager v0.0.19.30305
+RPG written to: C:\ECU\rpg\Accelerator_023.rpg
+RILPackager: Finished
+ 
+Build Number: 23
+Build Time: 169.7 seconds.
+ 
+########################################
+#####   Successful Raptor Build    #####
+#####       Show in Folder         #####
+########################################
+ 
